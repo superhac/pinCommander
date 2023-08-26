@@ -1,5 +1,5 @@
 # Overview
-The project is made of two seperate commpenents:
+The project is made of two seperate components:
 - Controller (pinCommander-controller)
 - HMI (pinCommander-hmi)
 ![Overview](docs/media/overview.png)
