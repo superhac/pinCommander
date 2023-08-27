@@ -16,6 +16,10 @@ My devlopment is based on the [ESP32-S3-DevKitC-1 board](https://docs.espressif.
 ### MPU6050 (accelerometer)
 This is used for implementing the nudging sensor input to VPX.
 ![mpu6050](docs/media/mpu6050.png)
+
+My dev setup:
+
+![myesp](docs/media/myesp32s3.jpg)
 ## HMI
 The HMI unit is [Elecrow 5"](https://www.elecrow.com/esp32-display-5-inch-hmi-display-rgb-tft-lcd-touch-screen-support-lvgl.html) varient.
 
@@ -33,3 +37,6 @@ Status
 
 ![pinmapping](docs/media/hmi-status.png)
 
+My dev setup:
+
+![myesp](docs/media/my-hmi.jpg)
