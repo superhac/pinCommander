@@ -125,11 +125,11 @@ void process_hmi_button(char *msgData)
     }
     else if (strcmp(msgData, "PINMAME_WINDOWLOCK_KEYMAP") == 0)
     {
-        send_hid_keyboard(PINMAME_ADDEBALL_KEYMAP);
+        send_hid_keyboard(PINMAME_WINDOWLOCK_KEYMAP);
     }
     else if (strcmp(msgData, "PINMAME_ADDEBALL_KEYMAP") == 0)
     {
-        send_hid_keyboard(PINMAME_SHOWKEYS_KEYMAP);
+        send_hid_keyboard(PINMAME_ADDEBALL_KEYMAP);
     }
     else if (strcmp(msgData, "PINMAME_DISPLAYSIZE_KEYMAP") == 0)
     {
