@@ -1,6 +1,6 @@
 # Overview
 ![Overview](docs/media/overview.png)
-The project is made of two seperate components with the following features:
+The project is made of two separate components with the following features:
 - Controller (pinCommander-controller)
   - 20 Button Support (Gamepad HID)
   - Nudge support via (Gamepad X/y axis mapping via the MPU6050)

@@ -1,2 +1,2 @@
-./build
-./dependencies.lock
+build/
+dependencies.lock
