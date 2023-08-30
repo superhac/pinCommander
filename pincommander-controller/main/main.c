@@ -31,14 +31,14 @@
 
 static const char *TAG = "main.c";
 
-// on esp32-s3 - GPIO 1, GPIO2, GPIO_NUM_3, GPIO_NUM_46 (Nothing), and GPIO 20, GPIO 19 (causes reboot when grounded?), GPIO 48 appears to be connected to NEOPIXEL don't work.
-gpio_num_t pins[] = {GPIO_NUM_6, GPIO_NUM_7, GPIO_NUM_8, GPIO_NUM_9, GPIO_NUM_10, GPIO_NUM_11, GPIO_NUM_12, GPIO_NUM_13, GPIO_NUM_14,
+// on esp32-s3 - GPIO 1, GPIO2, GPIO_NUM_46 (Nothing), and GPIO 20, GPIO 19 (causes reboot when grounded?), GPIO 48 appears to be connected to NEOPIXEL don't work.
+gpio_num_t pins[] = {GPIO_NUM_3, GPIO_NUM_6, GPIO_NUM_7, GPIO_NUM_8, GPIO_NUM_9, GPIO_NUM_10, GPIO_NUM_11, GPIO_NUM_12, GPIO_NUM_13, GPIO_NUM_14,
                      GPIO_NUM_15, GPIO_NUM_16, GPIO_NUM_17, GPIO_NUM_18, GPIO_NUM_21, GPIO_NUM_36, GPIO_NUM_40, GPIO_NUM_41, GPIO_NUM_42, GPIO_NUM_45, GPIO_NUM_47};
 
-// windows button HID starts at 1.  e.g. 0=1, 1=2, .. on windows
-uint32_t buttons[] = {GAMEPAD_BUTTON_0, GAMEPAD_BUTTON_1, GAMEPAD_BUTTON_2, GAMEPAD_BUTTON_3, GAMEPAD_BUTTON_4, GAMEPAD_BUTTON_5, GAMEPAD_BUTTON_6, GAMEPAD_BUTTON_7,
+// windows button HID starts at 1.  e.g. 0=1, 1=2, .. on windows.  ** Theres also an issue in using GAMEPAD_BUTTON_0.  The any GPIO mapped to it doesn't work. skipped for now 
+uint32_t buttons[] = {GAMEPAD_BUTTON_1, GAMEPAD_BUTTON_2, GAMEPAD_BUTTON_3, GAMEPAD_BUTTON_4, GAMEPAD_BUTTON_5, GAMEPAD_BUTTON_6, GAMEPAD_BUTTON_7,
                       GAMEPAD_BUTTON_8, GAMEPAD_BUTTON_9, GAMEPAD_BUTTON_10, GAMEPAD_BUTTON_11, GAMEPAD_BUTTON_12, GAMEPAD_BUTTON_13, GAMEPAD_BUTTON_14, GAMEPAD_BUTTON_15, GAMEPAD_BUTTON_16,
-                      GAMEPAD_BUTTON_17, GAMEPAD_BUTTON_18, GAMEPAD_BUTTON_19};
+                      GAMEPAD_BUTTON_17, GAMEPAD_BUTTON_18, GAMEPAD_BUTTON_19, GAMEPAD_BUTTON_20, GAMEPAD_BUTTON_21};
 
 /* WiFi Settings for AP Mode*/
 #define ESP_WIFI_SSID "pincommander"

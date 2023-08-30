@@ -2,7 +2,7 @@
 ![Overview](docs/media/overview.png)
 The project is made of two separate components with the following features:
 - Controller (pinCommander-controller)
-  - 20 Button Support (Gamepad HID)
+  - 21 Button Support (Gamepad HID)
   - Nudge support via (Gamepad X/y axis mapping via the MPU6050)
   - Keyboard and Consumer HID
   - Private WiFi network for connecting to other compenents (e.g. the HMI). 
