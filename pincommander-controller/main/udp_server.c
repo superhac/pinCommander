@@ -138,6 +138,12 @@ void process_hmi_button(char *msgData)
     else if (strcmp(msgData, "PINMAME_BANGBACK_KEYMAP") == 0)
     {
         send_hid_keyboard(PINMAME_BANGBACK_KEYMAP);
+    } else if (strcmp(msgData, "VPX_STEREO3D_KEYMAP") == 0)
+    {
+        send_hid_keyboard(VPX_STEREO3D_KEYMAP);
+    } else if (strcmp(msgData, "VPX_STATS_KEYMAP") == 0)
+    {
+        send_hid_keyboard(VPX_STATS_KEYMAP);
     }
 
     else

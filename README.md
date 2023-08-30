@@ -33,6 +33,11 @@ PinMame
 
 ![pinmapping](docs/media/hmi-pinmame.png)
 
+VPX
+
+![pinmapping](docs/media/hmi-vpx.png)
+
+
 Status
 
 ![pinmapping](docs/media/hmi-status.png)

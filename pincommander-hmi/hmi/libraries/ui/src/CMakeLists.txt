@@ -10,6 +10,10 @@ SET(SOURCES screens/ui_Screen1.c
     images/ui_img_volume_disabled_icon_64_pressed_png.c
     images/ui_img_1661985963.c
     images/ui_img_494244644.c
+    images/ui_img_19160962.c
+    images/ui_img_1570440351.c
+    images/ui_img_stats_png.c
+    images/ui_img_576355194.c
     images/ui_img_red_wifi_64_png.c
     images/ui_img_green_wifi_64_png.c)
 

@@ -53,3 +53,10 @@
 #define PINMAME_BANGBACK_KEYMAP          (uint8_t [6]){HID_KEY_T},      0
 #define PINMAME_DISPLAYSIZE_KEYMAP       (uint8_t [6]){HID_KEY_F5},     0
 /************************************************************************************************/
+
+/****** VPX **********************************************************************************/
+// send_hid_keyboard
+/*                                      -----Keyboard HID Key-----      ------KEYBOARD Modifiers----*/
+#define VPX_STEREO3D_KEYMAP             (uint8_t [6]){HID_KEY_F10},       0
+#define VPX_STATS_KEYMAP                (uint8_t [6]){HID_KEY_F11},       0
+/************************************************************************************************/

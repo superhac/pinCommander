@@ -164,6 +164,15 @@ void ui_event_pinmameBangBackButton(lv_event_t * e);
 extern lv_obj_t * ui_pinmameBangBackButton;
 extern lv_obj_t * ui_Label29;
 extern lv_obj_t * ui_VPXTabPage;
+extern lv_obj_t * ui_Panel38;
+extern lv_obj_t * ui_Panel39;
+void ui_event_VPXStereo3dImgButton(lv_event_t * e);
+extern lv_obj_t * ui_VPXStereo3dImgButton;
+extern lv_obj_t * ui_Label37;
+extern lv_obj_t * ui_Panel40;
+void ui_event_VPXStatsImgButton(lv_event_t * e);
+extern lv_obj_t * ui_VPXStatsImgButton;
+extern lv_obj_t * ui_Label38;
 extern lv_obj_t * ui_StatusTabPage;
 extern lv_obj_t * ui_Panel1;
 extern lv_obj_t * ui_Panel34;
@@ -193,6 +202,10 @@ LV_IMG_DECLARE(ui_img_volume_disabled_icon_64_png);    // assets\Volume_Disabled
 LV_IMG_DECLARE(ui_img_volume_disabled_icon_64_pressed_png);    // assets\Volume_Disabled_Icon_64_pressed.png
 LV_IMG_DECLARE(ui_img_1661985963);    // assets\dark-mode-64.png
 LV_IMG_DECLARE(ui_img_494244644);    // assets\dark-mode-64_pressed.png
+LV_IMG_DECLARE(ui_img_19160962);    // assets\3dglasses-64.png
+LV_IMG_DECLARE(ui_img_1570440351);    // assets\3dglasses-64-pressed.png
+LV_IMG_DECLARE(ui_img_stats_png);    // assets\stats.png
+LV_IMG_DECLARE(ui_img_576355194);    // assets\stats-pressed.png
 LV_IMG_DECLARE(ui_img_red_wifi_64_png);    // assets\red_wifi_64.png
 LV_IMG_DECLARE(ui_img_green_wifi_64_png);    // assets\green_wifi_64.png
 

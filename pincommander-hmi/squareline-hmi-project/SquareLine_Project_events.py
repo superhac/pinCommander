@@ -10,3 +10,7 @@ def buttonPinmameEvent_cb(event_struct):
 def buttonStatusEvent_cb(event_struct):
     return
 
+
+def buttonVPXEvent_cb(event_struct):
+    return
+

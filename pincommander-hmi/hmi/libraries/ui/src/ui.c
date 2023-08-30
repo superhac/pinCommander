@@ -148,6 +148,15 @@ void ui_event_pinmameBangBackButton(lv_event_t * e);
 lv_obj_t * ui_pinmameBangBackButton;
 lv_obj_t * ui_Label29;
 lv_obj_t * ui_VPXTabPage;
+lv_obj_t * ui_Panel38;
+lv_obj_t * ui_Panel39;
+void ui_event_VPXStereo3dImgButton(lv_event_t * e);
+lv_obj_t * ui_VPXStereo3dImgButton;
+lv_obj_t * ui_Label37;
+lv_obj_t * ui_Panel40;
+void ui_event_VPXStatsImgButton(lv_event_t * e);
+lv_obj_t * ui_VPXStatsImgButton;
+lv_obj_t * ui_Label38;
 lv_obj_t * ui_StatusTabPage;
 lv_obj_t * ui_Panel1;
 lv_obj_t * ui_Panel34;
@@ -168,6 +177,7 @@ void ui_event_statusPingButton(lv_event_t * e);
 lv_obj_t * ui_statusPingButton;
 lv_obj_t * ui_Label33;
 lv_obj_t * ui____initial_actions0;
+const lv_img_dsc_t * ui_imgset_1915039266[1] = {&ui_img_19160962};
 const lv_img_dsc_t * ui_imgset_1984605205[1] = {&ui_img_1661985963};
 const lv_img_dsc_t * ui_imgset_green_wifi_[1] = {&ui_img_green_wifi_64_png};
 const lv_img_dsc_t * ui_imgset_red_wifi_[1] = {&ui_img_red_wifi_64_png};
@@ -408,6 +418,22 @@ void ui_event_pinmameBangBackButton(lv_event_t * e)
     lv_obj_t * target = lv_event_get_target(e);
     if(event_code == LV_EVENT_CLICKED) {
         buttonPinmameEvent_cb(e);
+    }
+}
+void ui_event_VPXStereo3dImgButton(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        buttonVPXEvent_cb(e);
+    }
+}
+void ui_event_VPXStatsImgButton(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+    lv_obj_t * target = lv_event_get_target(e);
+    if(event_code == LV_EVENT_CLICKED) {
+        buttonVPXEvent_cb(e);
     }
 }
 void ui_event_statusPingButton(lv_event_t * e)

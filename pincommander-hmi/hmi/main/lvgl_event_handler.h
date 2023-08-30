@@ -5,6 +5,7 @@
 void buttonPinvolCallback(lv_event_t * e);
 void buttonPinmameCallback(lv_event_t* e);
 void buttonStatusCallback(lv_event_t* e);
+void buttonVPXCallback(lv_event_t* e);
 
 #endif
 

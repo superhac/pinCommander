@@ -42,6 +42,8 @@ const uint8_t PINMAME_WINDOWLOCK_KEYMAP[] = "PINMAME_WINDOWLOCK_KEYMAP";
 const uint8_t PINMAME_BANGBACK_KEYMAP[] = "PINMAME_BANGBACK_KEYMAP";
 const uint8_t PINMAME_DISPLAYSIZE_KEYMAP[] = "PINMAME_DISPLAYSIZE_KEYMAP";
 
+const uint8_t VPX_STEREO3D_KEYMAP[] = "VPX_STEREO3D_KEYMAP";
+const uint8_t VPX_STATS_KEYMAP[] = "VPX_STATS_KEYMAP";
 
 
 void buttonPinvolCallback(lv_event_t* e) {
@@ -161,6 +163,21 @@ void buttonStatusCallback(lv_event_t* e) {
       char msg[] = "ping";
       LV_LOG_USER("statusPingButton Event recv");
       sendUDPMsg(msg, strlen(msg), MSG_ID_PING_REQ);
+    }
+  }
+}
+
+void buttonVPXCallback(lv_event_t* e) {
+  lv_event_code_t code = lv_event_get_code(e);
+  lv_obj_t* btn = lv_event_get_target(e);
+  if (code == LV_EVENT_CLICKED) {
+
+    if (ui_VPXStereo3dImgButton == btn) {
+      LV_LOG_USER("VPXStereo3dImgButton Event recv");
+      sendUDPMsg(VPX_STEREO3D_KEYMAP, sizeof(VPX_STEREO3D_KEYMAP) - 1, MSG_ID_KEY_SEQUENCE);  //take off 1 to remove the null on strings
+    } else if (ui_VPXStatsImgButton == btn) {
+      LV_LOG_USER("VPXStereo3dImgButton Event recv");
+      sendUDPMsg(VPX_STATS_KEYMAP, sizeof(VPX_STATS_KEYMAP) - 1, MSG_ID_KEY_SEQUENCE);  //take off 1 to remove the null on strings
     }
   }
 }

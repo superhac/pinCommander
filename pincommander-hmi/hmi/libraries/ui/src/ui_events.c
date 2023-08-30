@@ -21,3 +21,8 @@ void buttonStatusEvent_cb(lv_event_t * e)
 {
 	buttonStatusCallback(e);
 }
+
+void buttonVPXEvent_cb(lv_event_t * e)
+{
+	buttonVPXCallback(e);
+}

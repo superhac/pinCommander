@@ -12,6 +12,7 @@ extern "C" {
 
 void buttonPinvolEvent_cb(lv_event_t * e);
 void buttonPinmameEvent_cb(lv_event_t * e);
+void buttonVPXEvent_cb(lv_event_t * e);
 void buttonStatusEvent_cb(lv_event_t * e);
 
 #ifdef __cplusplus
