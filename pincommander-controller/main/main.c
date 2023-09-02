@@ -234,6 +234,7 @@ void app_main(void)
     }
 
     /* Init all drivers and devicess*/
+    vTaskDelay(pdMS_TO_TICKS(10000)); // 10secs. need this for cold booting pc or the hid devices are not detecked. 
     setupUSB();
     setupButtons();
     i2c_sensor_mpu6050_init();

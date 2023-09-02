@@ -88,7 +88,7 @@ extern void send_hid_consumer(uint16_t consumerkey, uint8_t keymodifier)
     ESP_LOGI(TAG, "Sending Consumer report");
     /* send keyboard modifiers  */
     tud_hid_keyboard_report(HID_ITF_PROTOCOL_KEYBOARD, keymodifier, NULL);
-    vTaskDelay(pdMS_TO_TICKS(10));
+    vTaskDelay(pdMS_TO_TICKS(10)); 
     /* send consumer key */
     tud_hid_report(REPORT_ID_CONSUMER_CONTROL, &consumerkey, 2);
        
@@ -110,7 +110,7 @@ extern void send_hid_keyboard(uint8_t keycode[], uint8_t keymodifier)
        //uint8_t keycode[6] = {HID_KEY_F10}; //, HID_KEY_B};
        tud_hid_keyboard_report(HID_ITF_PROTOCOL_KEYBOARD, keymodifier, keycode);
        //PINVOL_GLOBAL_VOL_UP_KEYMAP();
-       vTaskDelay(pdMS_TO_TICKS(30));
+       vTaskDelay(pdMS_TO_TICKS(50)); // had to set to 50 for pinmame
        tud_hid_keyboard_report(HID_ITF_PROTOCOL_KEYBOARD, 0, NULL);  
 
     // vTaskDelay(pdMS_TO_TICKS(1000)); // need to add delay or it won't work?  No less then 10
